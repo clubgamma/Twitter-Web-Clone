@@ -14,11 +14,12 @@ Read the [Code of Conduct](https://github.com/clubgamma/code-of-conduct) before 
 1.  If you are new to Git and GitHub, it is advisable that you go through
     [GitHub For Beginners](http://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1/)
     **before** moving to ahead.
-2.  Pick any issue you want to work on from the [issues](https://github.com/clubgamma/spotify-web-clone/issues), discuss with maintainer on issue and then start.
+2.  Pick any issue you want to work on from the [issues](https://github.com/clubgamma/Twitter-Web-Clone/issues), discuss with maintainer on issue and then start.
 
 3.  Fork the project on GitHub.
+    ![fork](https://user-images.githubusercontent.com/63559515/134960888-79145b5e-4b80-43bf-be82-41b451bbaff5.jpg)
     [Help Guide to Fork a Repository](https://help.github.com/en/articles/fork-a-repo/).
-    ![fork](https://user-images.githubusercontent.com/58077762/93772626-ac77ef80-fc3c-11ea-8ee6-e381e1d68280.png)
+    
     After a sucessful fork, you'll see a copy of this repo in your own account.
 
 4.  Clone the project.
