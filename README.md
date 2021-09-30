@@ -6,7 +6,7 @@ Lets make the Hacktober Fest 2021 more exciting by creating an amazing twitter c
 Here we would like for you to contribute for creating diiferent components which we have seen in twitter application and give it a whole new phase of creativity.
 
 
-**Read the Contributing.md file for all about how to start contributing to this project.**
+**Read the [Contributing.md](https://github.com/clubgamma/Twitter-Web-Clone/blob/068368cc1bb086dc52b4ab400a5e82783ed7a9eb/CONTRIBUTING.md) file for all about how to start contributing to this project.**
 
 
 # Things to keep in mind
