@@ -31,11 +31,7 @@ body {
   overflow-y: scroll;
 }
 
-
-
-
-
-/* widgets */
+/* Rightsidebar */
 .widgets {
   flex: 0.3;
 }
