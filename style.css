@@ -1,1 +1,141 @@
 /* You can add your CSS here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  display: flex;
+  height: 100vh;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+}
+
+.sidebar {
+  border-right: 1px solid #50b7f5;
+  flex: 0.2;
+
+  min-width: 250px;
+}
+
+
+/* feed */
+.feed {
+  flex: 0.5;
+  border-right: 1px solid #50b7f5;
+  min-width: fit-content;
+  overflow-y: scroll;
+}
+
+
+
+
+
+/* widgets */
+.widgets {
+  flex: 0.3;
+}
+
+.widgets__input {
+  display: flex;
+  align-items: center;
+  background-color: var(--twitter-background);
+  padding: 10px;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-left: 20px;
+}
+
+.widgets__input input {
+  border: none;
+  background-color: var(--twitter-background);
+font-size:15px;
+
+}
+
+.widgets__searchIcon {
+  color: gray;
+}
+
+.trends_box{
+background-color:rgb(245,248,250);
+border-radius:15px;
+margin:15px auto;
+width:80%;
+cursor:pointer;
+
+}
+
+
+.trends_header{
+
+display:flex;
+flex-direction:row;
+width:100%;
+border-bottom:1px solid white;
+padding:15px 15px 10px;
+}
+
+
+.trend{
+border-bottom:1px solid white;
+padding:15px;
+}
+.trend:hover,.trends_show-more:hover{
+background-color:rgb(233,213,235);
+}
+.trends_show-more{
+padding:15px;
+}
+
+.trends_show-more a{
+color:#239df0;
+text-decoration:none;
+}
+
+
+.trends_show-more:hover{
+border-bottom-left-radius:15px;
+border-bottom-right-radius:15px;
+}
+
+
+.trends_body span{
+font-size:14px;
+color:#b1b9bf;
+
+}
+
+.trends_body p{
+font-weight:700;
+}
+
+.trends_header p{
+width:100%;
+font-size:18px;
+font-weight:600;
+}
+
+.trends_header .fa-cog{
+color:blue;
+}
+.trends{
+display:flex;
+background-color:rgb(245,248,250);
+border-radius:15px;
+border:1px solid #b1b9bf;
+margin:2px;
+padding:8px;
+width:100%;
+cursor:pointer;
+}
+.trends img{
+width:68px;
+height:68px;
+
+}
+
