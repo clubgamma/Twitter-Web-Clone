@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Twitter Clone - Final</title>
     <link rel="stylesheet" href="styles.css" />
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
       integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
       crossorigin="anonymous"
     />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   </head>
   <body>
     <!-- sidebar starts -->
@@ -61,6 +65,137 @@
     </div>
     <!-- sidebar ends -->
 
-    
+    <!-- Bottom right messages section starts -->
+
+    <div class="messages__popup">
+      <div class="messages__popup__header" onclick="myFunction()">
+        <h3>Messages</h3>
+        <span class="material-icons"> mail_outline </span>
+        <span id="material-icons-id-u" class="material-icons">
+          expand_less
+        </span>
+        <span id="material-icons-id-d" class="material-icons">
+          expand_more
+        </span>
+      </div>
+      <div class="messages__popup__chats" id="messages__popup__chats__id">
+        <div class="messages__popup__chat">
+          <img
+            class="messages__popup__chat__profile__img"
+            src="/images/profile.png"
+          />
+          <div class="messages__popup__chat__message">
+            <p><strong> Saheel M </strong> @savvysaheel</p>
+            <p class="messages__popup__chat__message__msg">
+              Reacted with &#128514; &#128514;
+            </p>
+          </div>
+          <div class="messages__popup__chat__message__date">
+            <p>Oct 3</p>
+          </div>
+        </div>
+        <div class="messages__popup__chat">
+          <img
+            class="messages__popup__chat__profile__img"
+            src="/images/profile.png"
+          />
+          <div class="messages__popup__chat__message">
+            <p><strong> Saheel M </strong> @savvysaheel</p>
+            <p class="messages__popup__chat__message__msg">&#9996;</p>
+          </div>
+          <div class="messages__popup__chat__message__date">
+            <p>Oct 3</p>
+          </div>
+        </div>
+        <div class="messages__popup__chat">
+          <img
+            class="messages__popup__chat__profile__img"
+            src="/images/profile.png"
+          />
+          <div class="messages__popup__chat__message">
+            <p><strong> Saheel M </strong> @savvysaheel</p>
+            <p class="messages__popup__chat__message__msg">
+              Goodmorning bro &#127774;
+            </p>
+          </div>
+          <div class="messages__popup__chat__message__date">
+            <p>Oct 3</p>
+          </div>
+        </div>
+        <div class="messages__popup__chat">
+          <img
+            class="messages__popup__chat__profile__img"
+            src="/images/profile.png"
+          />
+          <div class="messages__popup__chat__message">
+            <p><strong> Saheel M </strong> @savvysaheel</p>
+            <p class="messages__popup__chat__message__msg">
+              Congratulations bro &#127941; &#127942;
+            </p>
+          </div>
+          <div class="messages__popup__chat__message__date">
+            <p>Oct 3</p>
+          </div>
+        </div>
+        <div class="messages__popup__chat">
+          <img
+            class="messages__popup__chat__profile__img"
+            src="/images/profile.png"
+          />
+          <div class="messages__popup__chat__message">
+            <p><strong> Saheel M </strong> @savvysaheel</p>
+            <p class="messages__popup__chat__message__msg">
+              Reacted with &#128155;
+            </p>
+          </div>
+          <div class="messages__popup__chat__message__date">
+            <p>Oct 3</p>
+          </div>
+        </div>
+        <div class="messages__popup__chat">
+          <img
+            class="messages__popup__chat__profile__img"
+            src="/images/profile.png"
+          />
+          <div class="messages__popup__chat__message">
+            <p><strong> Saheel M </strong> @savvysaheel</p>
+            <p class="messages__popup__chat__message__msg">
+              Reacted with :smiley
+            </p>
+          </div>
+          <div class="messages__popup__chat__message__date">
+            <p>Oct 3</p>
+          </div>
+        </div>
+        <div class="messages__popup__chat">
+          <img
+            class="messages__popup__chat__profile__img"
+            src="/images/profile.png"
+          />
+          <div class="messages__popup__chat__message">
+            <p><strong> Saheel M </strong> @savvysaheel</p>
+            <p class="messages__popup__chat__message__msg">
+              Reacted with :smiley
+            </p>
+          </div>
+          <div class="messages__popup__chat__message__date">
+            <p>Oct 3</p>
+          </div>
+        </div>
+        <div class="messages__popup__chat"></div>
+        <div class="messages__popup__chat"></div>
+      </div>
+    </div>
+    <script>
+      function myFunction() {
+        var element = document.getElementById("messages__popup__chats__id");
+        element.classList.toggle("toggle__messages__popup__chats");
+        var arrowUp = document.getElementById("material-icons-id-u");
+        arrowUp.classList.toggle("toggle__arrow__up");
+        var arrowDown = document.getElementById("material-icons-id-d");
+        arrowDown.classList.toggle("toggle__arrow__down");
+      }
+    </script>
+    <!-- Bottom right messages section ends -->
   </body>
 </html>

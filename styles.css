@@ -1,5 +1,4 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +8,7 @@
 body {
   --twitter-color: #50b7f5;
   --twitter-background: #e6ecf0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .sidebarOption {
@@ -76,3 +75,77 @@ body {
   font-size: 30px;
 }
 
+.messages__popup {
+  position: absolute;
+  bottom: 0;
+  right: 25px;
+  min-width: 350px;
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+  box-shadow: 0 0 15px rgba(90, 89, 89, 0.253);
+}
+.messages__popup__header {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  padding-bottom: 8px;
+}
+.messages__popup__header > h3 {
+  font-size: 22px;
+}
+.messages__popup__header:hover {
+  cursor: pointer;
+}
+.material-icons:nth-child(2) {
+  margin-left: auto;
+  margin-right: 20px;
+}
+#material-icons-id-u.toggle__arrow__up {
+  display: none;
+}
+#material-icons-id-d {
+  display: none;
+}
+#material-icons-id-d.toggle__arrow__down {
+  display: block;
+}
+#messages__popup__chats__id {
+  max-height: 477px;
+  overflow-y: scroll;
+  -webkit-transition: all 0.3s linear 0s;
+  transition: all 0.3s linear 0s;
+  display: none;
+}
+#messages__popup__chats__id.toggle__messages__popup__chats {
+  display: block;
+}
+.messages__popup__chat {
+  display: flex;
+  padding-top: 20px;
+  padding: 10px;
+}
+.messages__popup__chat:hover {
+  cursor: pointer;
+  background-color: rgba(192, 192, 192, 0.226);
+}
+.messages__popup__chat__profile__img {
+  width: 45px;
+  height: 45px;
+}
+.messages__popup__chat__message,
+.messages__popup__chat__message__date {
+  margin: 6px;
+}
+.messages__popup__chat__message {
+  margin-left: 10px;
+  margin-top: 0;
+}
+.messages__popup__chat__message > p > span {
+  font-size: 12px;
+}
+.messages__popup__chat__message__msg {
+  color: rgb(117, 115, 115);
+}
+.messages__popup__chat__message__date {
+  margin-left: auto;
+}
