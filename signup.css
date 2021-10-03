@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.fcontainer{
+    width: 45%;
+    margin:3% auto;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    flex-direction: column;
+}
+.icon{
+    margin-top: 2%;
+    margin-bottom: 1%;
+}
+.icon i{
+    color: #fff;
+}
+.heading{
+    margin: 2% 0;
+}
+.heading h3{
+    color: #fff;
+    font-size: 140%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.name,
+.phone{
+    width: 80%;
+    margin: 1% 0;
+}
+.phone{
+    margin-top: 2%;
+}
+
+.phone input,
+.name input{
+    width: 100%;
+    height: 45px;
+    border: 1px solid #fff;
+    background-color:black;
+    border-radius: 5px;
+    font-size: 100%;
+    padding: 1%;
+    color:#fff;
+}
+.markup{
+    margin: 2% 0;
+}
+.markup h4{
+    color:#1DA1F2 ;
+}
+
+.phone input:hover,
+.name input:hover{
+    border: 2px solid #1DA1F2;
+}
+.dob{
+    margin: 2% 10%;
+}
+.dob h4{
+    color: #fff;
+}
+.dob p{
+    margin-top: 1%;
+    color: gray;
+    font-size: 110%;
+}
+
+.button{
+    width: 80%;
+    margin-top: 7%;
+    margin-bottom: 2%;
+}
+#button{
+    width: 100%;
+    height: 40px;
+    background-color: #1DA1F2;
+    border-radius: 30px;
+    color: white;
+    font-size: large;
+}
+#button:hover{
+   cursor: pointer;
+}
+.select_dob{
+    margin: 1% 0;
+    width: 80%;
+}
+#month,
+#day,
+#year{
+    background-color: black;
+    color: white;
+    width: 32%;
+    height: 50px;
+    border-radius: 5px;
+    font-size: 100%;
+    padding: 1%;
+}
+#month:hover,
+#day:hover,
+#year:hover{
+    border: 2px solid #1DA1F2;
+}
