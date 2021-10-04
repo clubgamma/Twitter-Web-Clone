@@ -61,7 +61,7 @@
         <span class="material-icons"> more_horiz </span>
         <h2>More</h2>
       </div>
-      <button class="sidebar__tweet">Tweet</button>
+      <button class="sidebar__tweet" onclick="showTweetSection()">Tweet</button>
     </div>
     <!-- sidebar ends -->
 
@@ -86,6 +86,48 @@
       </form>
     </div>
     <!-- tweetbox ends -->
+
+
+     <!-- Tweet section Start Here -->
+    <div class="Tweet__container" id="Tweet__container">
+      <div class="Tweet__section">
+        <!-- Header button -->
+        <div class="Tweet__header" onclick="hideTweetSection()">
+         <span class="material-icons">clear</span>
+        </div>
+        <!-- Body section -->
+        <div class="Tweet__message">
+          <!-- left side icons -->
+          <div class="message__left">
+           <img src="./images/tweeticon.PNG" alt="Tweet_lefticon">
+          </div>
+          <!-- Message right -->
+          <div class="message__right">
+            <!-- Top right body and input message -->
+            <div class="message__righttop">
+              <textarea type="textarea" cols="10" rows="4" placeholder="What's happening?"></textarea>
+              <div class="message__body">
+                 <span class="material-icons">language</span>
+                 <p>Everyone can reply</p>
+              </div>
+            </div>
+            <!-- bottom right button and tweet btn -->
+            <div class="message__btns">
+              <div class="message__attachementicons">
+                <span class="material-icons message__attachicons">image</span>
+                <span class="material-icons message__attachicons">gif_box</span>
+                <span class="material-icons message__attachicons">align_horizontal_left</span>
+                <span class="material-icons message__attachicons">sentiment_satisfied_alt</span>
+                <span class="material-icons message__attachicons">pending_actions</span>
+              </div>
+              <button class="message__tweetbtn">Tweet</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Tweet section End Here -->
+
 
       <!-- post starts -->
       <div class="post">
@@ -262,6 +304,17 @@
         arrowUp.classList.toggle("toggle__arrow__up");
         var arrowDown = document.getElementById("material-icons-id-d");
         arrowDown.classList.toggle("toggle__arrow__down");
+      }
+
+      // This function popup the tweet section for tweeting onclick
+      function showTweetSection(){
+        let TweetContainer = document.getElementById('Tweet__container');
+        TweetContainer.classList.add("show__tweet");
+      }
+        // This function hides the tweet section onclick on cross
+      function hideTweetSection(){
+        let TweetContainer = document.getElementById('Tweet__container');
+        TweetContainer.classList.remove("show__tweet");
       }
     </script>
     <!-- Bottom right messages section ends -->

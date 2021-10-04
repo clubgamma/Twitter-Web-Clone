@@ -181,6 +181,116 @@ body {
   scrollbar-width: none;
 }
 
+
+/* Tweet section styling goes here */
+.Tweet__container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+  display: grid;
+  justify-content: center;
+  transition:  all 0.3s linear;;
+  visibility: hidden;
+  z-index: -1;
+}
+.show__tweet{
+  visibility: visible;
+  z-index: 10; 
+}
+.Tweet__section{
+  margin-top: 3rem;
+  background: #fff;
+  border-radius: 1rem;
+  width: 90vw;
+  height: 50vh;
+  max-width: 620px;
+  position: relative;
+ 
+}
+.Tweet__section .Tweet__header{
+  padding: 1rem;
+  height: 60px; 
+  width: 100%;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.Tweet__header span{
+  cursor: pointer;
+}
+
+.Tweet__section .Tweet__message{
+  padding: 1rem;
+  display: flex;
+}
+.Tweet__message .message__right{
+  flex: 1;
+}
+.Tweet__message textarea{
+  width: 100%;
+  border: none;
+  font-size: 1.4rem;
+  margin-top: 10px;
+  outline: none;
+  font-family:'Segoe UI';
+  overflow: hidden;
+  resize: none;
+}
+
+.message__right .message__body{
+  display: flex;
+  color: var(--twitter-color);
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: .8rem 0;
+}
+.message__right .message__body span{
+  font-size: 1rem !important;
+}
+.message__right .message__body p{
+  font-size: .7rem;
+  margin-left: .5rem;
+  letter-spacing: 1px;
+  font-weight: bolder;
+}
+.message__right .message__btns {
+  color: var(--twitter-color);
+  height: 20%;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.message__attachementicons{
+  display: flex;
+  align-items: center;
+}
+.message__attachementicons .material-icons{ 
+  margin-right: 0;
+}
+.message__right .message__attachicons{
+  padding-right: .5rem;
+  cursor: pointer;
+}
+
+.message__tweetbtn{
+  background-color: var(--twitter-color);
+  padding: .5rem 1rem;
+  border-radius: 1rem;
+  color: white;
+  font-weight: bolder;
+  border: none;
+}
+.message__tweetbtn:hover{
+  background-color:rgb(43, 143, 206);
+}
+
+/* Tweet section styling end Here */
+
+
 /* tweet box */
 .tweetbox__input img {
   border-radius: 50%;
