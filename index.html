@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Twitter Clone - Final</title>
+    <title>Twitter Clone Web App</title>
     <link rel="stylesheet" href="styles.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
@@ -65,6 +65,68 @@
     </div>
     <!-- sidebar ends -->
 
+
+   <!-- feed starts -->
+   <div class="feed">
+    <div class="feed__header">
+      <h2>Home</h2>
+    </div>
+
+    <!-- tweetbox starts -->
+    <div class="tweetBox">
+      <form>
+        <div class="tweetbox__input">
+          <img
+            src="https://cdn140.picsart.com/361791734047201.jpg?type=webp&to=crop&r=256"
+            alt=""
+          />
+          <input type="text" placeholder="What's happening?" />
+        </div>
+        <button class="tweetBox__tweetButton">Tweet</button>
+      </form>
+    </div>
+    <!-- tweetbox ends -->
+
+      <!-- post starts -->
+      <div class="post">
+        <div class="post__avatar">
+          <img
+            src="https://cachedimages.podchaser.com/256x256/aHR0cHM6Ly9jcmVhdG9yLWltYWdlcy5wb2RjaGFzZXIuY29tL2RmODZjM2RjZTg5ZDI2ZGQzZWI5NWU4YzI1MDBhMTIyLmpwZWc%3D/aHR0cHM6Ly93d3cucG9kY2hhc2VyLmNvbS9pbWFnZXMvbWlzc2luZy1pbWFnZS5wbmc%3D"
+            alt=""
+          />
+        </div>
+
+        <div class="post__body">
+          <div class="post__header">
+            <div class="post__headerText">
+              <h3>
+               Elon Musk
+                <span class="post__headerSpecial"
+                  ><span class="material-icons post__badge"> verified </span>@elonmusk</span
+                >
+              </h3>
+            </div>
+            <div class="post__headerDescription">
+              <p>Oh sorry, yes, Roadster will have thrusters, not Plaid. 
+                Plaid is indeed close to the theoretical maximum of a roadworthy car without special devices.</p>
+            </div>
+          </div>
+          <img
+            src="https://www.focus2move.com/wp-content/uploads/2020/01/Tesla-Roadster-2020-1024-03.jpg"
+            alt=""
+          />
+          <div class="post__footer">
+            <span class="material-icons"> repeat </span>
+            <span class="material-icons"> favorite_border </span>
+            <span class="material-icons"> publish </span>
+          </div>
+        </div>
+      </div>
+      <!-- post ends -->
+
+
+
+
     <!-- Bottom right messages section starts -->
 
     <div class="messages__popup">
@@ -82,12 +144,57 @@
         <div class="messages__popup__chat">
           <img
             class="messages__popup__chat__profile__img"
-            src="/images/profile.png"
+            src="/images/Saheel.png"
           />
           <div class="messages__popup__chat__message">
             <p><strong> Saheel M </strong> @savvysaheel</p>
             <p class="messages__popup__chat__message__msg">
-              Reacted with &#128514; &#128514;
+              Reacted with &#128514;
+            </p>
+          </div>
+          <div class="messages__popup__chat__message__date">
+            <p>Oct 4</p>
+          </div>
+        </div>
+        <div class="messages__popup__chat">
+          <img
+            class="messages__popup__chat__profile__img"
+            src="/images/Yash.png"
+          />
+          <div class="messages__popup__chat__message">
+            <p><strong>Yash Patel </strong> @yashpatel458 </p>
+            <p class="messages__popup__chat__message__msg">
+              Can you check that bug again! 👨🏻‍💻
+            </p>
+          </div>
+          <div class="messages__popup__chat__message__date">
+            <p>Oct 4</p>
+          </div>
+        </div>
+        <div class="messages__popup__chat">
+          <img
+            class="messages__popup__chat__profile__img"
+            src="/images/Aryan.png"
+          />
+          <div class="messages__popup__chat__message">
+            <p><strong> Aryan Kadia</strong> @ak523</p>
+            <p class="messages__popup__chat__message__msg">
+              Time to hit the Gym 💪🏻
+            </p>
+          </div>
+          <div class="messages__popup__chat__message__date">
+            <p>Oct 4</p>
+          </div>
+        </div>
+        <div class="messages__popup__chat">
+          <img
+            class="messages__popup__chat__profile__img"
+            src="/images/Poojan.png"
+          />
+          <div class="messages__popup__chat__message">
+            <p><strong> Poojan Valadiya </strong> @poojanV55</p>
+            <p class="messages__popup__chat__message__msg">
+              Congratulations Bro &#127941;
             </p>
           </div>
           <div class="messages__popup__chat__message__date">
@@ -97,53 +204,10 @@
         <div class="messages__popup__chat">
           <img
             class="messages__popup__chat__profile__img"
-            src="/images/profile.png"
+            src="/images/Rushi.png"
           />
           <div class="messages__popup__chat__message">
-            <p><strong> Saheel M </strong> @savvysaheel</p>
-            <p class="messages__popup__chat__message__msg">&#9996;</p>
-          </div>
-          <div class="messages__popup__chat__message__date">
-            <p>Oct 3</p>
-          </div>
-        </div>
-        <div class="messages__popup__chat">
-          <img
-            class="messages__popup__chat__profile__img"
-            src="/images/profile.png"
-          />
-          <div class="messages__popup__chat__message">
-            <p><strong> Saheel M </strong> @savvysaheel</p>
-            <p class="messages__popup__chat__message__msg">
-              Goodmorning bro &#127774;
-            </p>
-          </div>
-          <div class="messages__popup__chat__message__date">
-            <p>Oct 3</p>
-          </div>
-        </div>
-        <div class="messages__popup__chat">
-          <img
-            class="messages__popup__chat__profile__img"
-            src="/images/profile.png"
-          />
-          <div class="messages__popup__chat__message">
-            <p><strong> Saheel M </strong> @savvysaheel</p>
-            <p class="messages__popup__chat__message__msg">
-              Congratulations bro &#127941; &#127942;
-            </p>
-          </div>
-          <div class="messages__popup__chat__message__date">
-            <p>Oct 3</p>
-          </div>
-        </div>
-        <div class="messages__popup__chat">
-          <img
-            class="messages__popup__chat__profile__img"
-            src="/images/profile.png"
-          />
-          <div class="messages__popup__chat__message">
-            <p><strong> Saheel M </strong> @savvysaheel</p>
+            <p><strong> Rushi Donga </strong> @rushidonga</p>
             <p class="messages__popup__chat__message__msg">
               Reacted with &#128155;
             </p>
@@ -155,37 +219,41 @@
         <div class="messages__popup__chat">
           <img
             class="messages__popup__chat__profile__img"
-            src="/images/profile.png"
+            src="/images/Kashyap.png"
           />
           <div class="messages__popup__chat__message">
-            <p><strong> Saheel M </strong> @savvysaheel</p>
+            <p><strong> Kashyap  </strong> @kashyap3</p>
             <p class="messages__popup__chat__message__msg">
-              Reacted with :smiley
+              lol 😝
             </p>
           </div>
           <div class="messages__popup__chat__message__date">
-            <p>Oct 3</p>
+            <p>Oct 2</p>
           </div>
         </div>
         <div class="messages__popup__chat">
           <img
             class="messages__popup__chat__profile__img"
-            src="/images/profile.png"
+            src="/images/Hetvi.png"
           />
           <div class="messages__popup__chat__message">
-            <p><strong> Saheel M </strong> @savvysaheel</p>
+            <p><strong> Hetvi Hadvani </strong> @Hetvi07</p>
             <p class="messages__popup__chat__message__msg">
-              Reacted with :smiley
+              Reacted with 🔥
             </p>
           </div>
           <div class="messages__popup__chat__message__date">
-            <p>Oct 3</p>
+            <p>Sept 30</p>
           </div>
         </div>
         <div class="messages__popup__chat"></div>
         <div class="messages__popup__chat"></div>
       </div>
     </div>
+
+
+
+
     <script>
       function myFunction() {
         var element = document.getElementById("messages__popup__chats__id");
