@@ -17,17 +17,18 @@
       crossorigin="anonymous"
     />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
   </head>
   <body>
     <!-- sidebar starts -->
     <div class="sidebar">
       <i class="fab fa-twitter"></i>
-      <div class="sidebarOption active">
+      <div class="sidebarOption active" onclick="loadPage('index')">
         <span class="material-icons"> home </span>
         <h2>Home</h2>
       </div>
 
-      <div class="sidebarOption">
+      <div class="sidebarOption" onclick="loadPage('explore')">
         <span class="material-icons"> tag </span>
         <h2>Explore</h2>
       </div>

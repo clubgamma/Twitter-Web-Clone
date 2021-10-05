@@ -1,1 +1,3 @@
-// You can add your javascript code here
+function loadPage(route) {
+  window.location.href = `./${route}.html`;
+}
