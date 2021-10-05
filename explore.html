@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitter Clone Web App</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="explore.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <!-- sidebar starts -->
+    <div class="sidebar">
+      <i class="fab fa-twitter"></i>
+      <div class="sidebarOption active">
+        <span class="material-icons"> home </span>
+        <h2>Home</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> search </span>
+        <h2>Explore</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> notifications_none </span>
+        <h2>Notifications</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> mail_outline </span>
+        <h2>Messages</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> bookmark_border </span>
+        <h2>Bookmarks</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> list_alt </span>
+        <h2>Lists</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> perm_identity </span>
+        <h2>Profile</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> more_horiz </span>
+        <h2>More</h2>
+      </div>
+      <button class="sidebar__tweet" onclick="showTweetSection()">Tweet</button>
+    </div>
+    <!-- sidebar ends -->
+
+    <!-- feed starts here -->
+    <div class="feed">
+      <!-- search section starts here -->
+      <div class="search">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Search Twitter" />
+        <i class="fas fa-cog"></i>
+      </div>
+      <!-- search section ends here -->
+
+      <!-- navbar section starts here -->
+      <nav>
+        <a>For you</a>
+        <a>COVID-19</a>
+        <a>Trending</a>
+        <a>News</a>
+        <a>Sports</a>
+        <a>Entertainment</a>
+      </nav>
+      <!-- navbar section ends here -->
+    </div>
+    <!-- feed ends here -->
+
+    <!-- Bottom right messages section starts -->
+    <div class="messages__popup">
+      <div class="messages__popup__header" onclick="myFunction()">
+        <h3>Messages</h3>
+        <span class="material-icons"> mail_outline </span>
+        <span id="material-icons-id-u" class="material-icons">
+          expand_less
+        </span>
+        <span id="material-icons-id-d" class="material-icons">
+          expand_more
+        </span>
+      </div>
+      <div class="messages__popup__chats" id="messages__popup__chats__id">
+        <div class="messages__popup__chat">
+          <img
+            class="messages__popup__chat__profile__img"
+            src="/images/Saheel.png"
+          />
+          <div class="messages__popup__chat__message">
+            <p><strong> Saheel M </strong> @savvysaheel</p>
+            <p class="messages__popup__chat__message__msg">
+              Reacted with &#128514;
+            </p>
+          </div>
+          <div class="messages__popup__chat__message__date">
+            <p>Oct 4</p>
+          </div>
+        </div>
+        <div class="messages__popup__chat">
+          <img
+            class="messages__popup__chat__profile__img"
+            src="/images/Yash.png"
+          />
+          <div class="messages__popup__chat__message">
+            <p><strong>Yash Patel </strong> @yashpatel458</p>
+            <p class="messages__popup__chat__message__msg">
+              Can you check that bug again! 👨🏻‍💻
+            </p>
+          </div>
+          <div class="messages__popup__chat__message__date">
+            <p>Oct 4</p>
+          </div>
+        </div>
+        <div class="messages__popup__chat">
+          <img
+            class="messages__popup__chat__profile__img"
+            src="/images/Aryan.png"
+          />
+          <div class="messages__popup__chat__message">
+            <p><strong> Aryan Kadia</strong> @ak523</p>
+            <p class="messages__popup__chat__message__msg">
+              Time to hit the Gym 💪🏻
+            </p>
+          </div>
+          <div class="messages__popup__chat__message__date">
+            <p>Oct 4</p>
+          </div>
+        </div>
+        <div class="messages__popup__chat">
+          <img
+            class="messages__popup__chat__profile__img"
+            src="/images/Poojan.png"
+          />
+          <div class="messages__popup__chat__message">
+            <p><strong> Poojan Valadiya </strong> @poojanV55</p>
+            <p class="messages__popup__chat__message__msg">
+              Congratulations Bro &#127941;
+            </p>
+          </div>
+          <div class="messages__popup__chat__message__date">
+            <p>Oct 3</p>
+          </div>
+        </div>
+        <div class="messages__popup__chat">
+          <img
+            class="messages__popup__chat__profile__img"
+            src="/images/Rushi.png"
+          />
+          <div class="messages__popup__chat__message">
+            <p><strong> Rushi Donga </strong> @rushidonga</p>
+            <p class="messages__popup__chat__message__msg">
+              Reacted with &#128155;
+            </p>
+          </div>
+          <div class="messages__popup__chat__message__date">
+            <p>Oct 3</p>
+          </div>
+        </div>
+        <div class="messages__popup__chat">
+          <img
+            class="messages__popup__chat__profile__img"
+            src="/images/Kashyap.png"
+          />
+          <div class="messages__popup__chat__message">
+            <p><strong> Kashyap </strong> @kashyap3</p>
+            <p class="messages__popup__chat__message__msg">lol 😝</p>
+          </div>
+          <div class="messages__popup__chat__message__date">
+            <p>Oct 2</p>
+          </div>
+        </div>
+        <div class="messages__popup__chat">
+          <img
+            class="messages__popup__chat__profile__img"
+            src="/images/Hetvi.png"
+          />
+          <div class="messages__popup__chat__message">
+            <p><strong> Hetvi Hadvani </strong> @Hetvi07</p>
+            <p class="messages__popup__chat__message__msg">Reacted with 🔥</p>
+          </div>
+          <div class="messages__popup__chat__message__date">
+            <p>Sept 30</p>
+          </div>
+        </div>
+        <div class="messages__popup__chat"></div>
+        <div class="messages__popup__chat"></div>
+      </div>
+    </div>
+
+    <script>
+      function myFunction() {
+        var element = document.getElementById("messages__popup__chats__id");
+        element.classList.toggle("toggle__messages__popup__chats");
+        var arrowUp = document.getElementById("material-icons-id-u");
+        arrowUp.classList.toggle("toggle__arrow__up");
+        var arrowDown = document.getElementById("material-icons-id-d");
+        arrowDown.classList.toggle("toggle__arrow__down");
+      }
+
+      // This function popup the tweet section for tweeting onclick
+      function showTweetSection() {
+        let TweetContainer = document.getElementById("Tweet__container");
+        TweetContainer.classList.add("show__tweet");
+      }
+      // This function hides the tweet section onclick on cross
+      function hideTweetSection() {
+        let TweetContainer = document.getElementById("Tweet__container");
+        TweetContainer.classList.remove("show__tweet");
+      }
+
+      const navLinks = document.querySelectorAll("nav a");
+      navLinks.forEach((navLink) => {
+        navLink.addEventListener("click", () => {
+          navLink.classList.add("active");
+          navLinks.forEach((item) => {
+            item != navLink && item.classList.remove("active");
+          });
+        });
+      });
+    </script>
+    <!-- Bottom right messages section ends -->
+  </body>
+</html>
