@@ -1,0 +1,90 @@
+/* css related to explore.html page, currently only for search and navbar section */
+
+/* search section css starts here */
+.search {
+  display: flex;
+  padding: 0.5em;
+  position: relative;
+  align-items: center;
+}
+
+.search input {
+  background-color: rgba(154, 189, 209, 0.205);
+  border: none;
+  border-radius: 20px;
+  padding: 12px 0 12px 2.5em;
+  width: 80%;
+  margin-right: auto;
+}
+
+.search i:first-child {
+  position: absolute;
+  left: 1.1em;
+  color: rgba(90, 90, 90, 0.356);
+}
+
+.search i:last-child {
+  padding-right: 5px;
+  opacity: 0.7;
+  cursor: pointer;
+  position: relative;
+}
+
+.search i:last-child::after {
+  content: "";
+  position: absolute;
+  background-color: black;
+  height: 1.8rem;
+  width: 1.8rem;
+  opacity: 0;
+  border-radius: 50%;
+  top: -0.4rem;
+  left: -0.4rem;
+}
+
+.search i:last-child:hover::after {
+  opacity: 0.3;
+}
+
+/* search section css ends here */
+
+/* navbar css starts here */
+nav {
+  width: 100%;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+}
+
+nav a {
+  position: relative;
+  flex: 1;
+  padding: 1em;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  font-weight: bold;
+  color: rgba(90, 90, 90, 0.719);
+  transition: background-color 100ms linear;
+}
+
+nav a:hover {
+  background-color: rgba(154, 189, 209, 0.1);
+}
+
+nav a.active {
+  color: black;
+}
+
+nav a.active::after {
+  content: "";
+  position: absolute;
+  width: 60%;
+  height: 0.5em;
+  background-color: var(--twitter-color);
+  bottom: 0;
+  left: 20%;
+  border-radius: 15px;
+}
+/* navbar css ends here */
