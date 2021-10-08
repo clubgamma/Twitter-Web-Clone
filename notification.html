@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Twitter Clone Web App</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="explore.css" />
+    <link rel="stylesheet" href="notification.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -29,12 +29,12 @@
         <h2>Home</h2>
       </div>
 
-      <div class="sidebarOption active" onclick="loadPage('explore')">
+      <div class="sidebarOption" onclick="loadPage('explore')">
         <span class="material-icons"> search </span>
         <h2>Explore</h2>
       </div>
 
-      <div class="sidebarOption" onclick="loadPage('notification')">
+      <div class="sidebarOption active" onclick="loadPage('notification')">
         <span class="material-icons"> notifications_none </span>
         <h2>Notifications</h2>
       </div>
@@ -69,26 +69,23 @@
 
     <!-- feed starts here -->
     <div class="feed">
+      <!-- header section starts -->
       <header>
-        <!-- search section starts here -->
-        <div class="search">
-          <i class="fas fa-search"></i>
-          <input type="text" placeholder="Search Twitter" />
+        <!-- notification header with settings icon starts -->
+        <div class="top-section">
+          <span>Notifications</span>
           <i class="fas fa-cog"></i>
         </div>
-        <!-- search section ends here -->
+        <!-- notification header with settings icon ends -->
 
-        <!-- navbar section starts here -->
+        <!-- navbar section starts -->
         <nav>
-          <a>For you</a>
-          <a>COVID-19</a>
-          <a>Trending</a>
-          <a>News</a>
-          <a>Sports</a>
-          <a>Entertainment</a>
+          <a>All</a>
+          <a>Mentions</a>
         </nav>
-        <!-- navbar section ends here -->
+        <!-- navbar section ends -->
       </header>
+      <!-- header section ends -->
     </div>
     <!-- feed ends here -->
 

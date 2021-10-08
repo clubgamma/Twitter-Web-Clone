@@ -1,42 +1,30 @@
-/* css related to explore.html page, currently only for search and navbar section */
+/* css related to notification.html, currently only for top section with navbar */
 
-/* header section css starts here */
+/* header css starts here */
 .feed header {
   border-bottom: 2px solid #eee;
 }
-/* header section css ends here */
+/* header css ends here */
 
-/* search section css starts here */
-.search {
+/* header top section css begins here */
+.top-section {
   display: flex;
-  padding: 0.5em;
-  position: relative;
-  align-items: center;
+  margin-inline: 1rem;
+  margin-block-start: 1rem;
 }
 
-.search input {
-  background-color: rgba(154, 189, 209, 0.205);
-  border: none;
-  border-radius: 20px;
-  padding: 12px 0 12px 2.5em;
-  width: 80%;
-  margin-right: auto;
+.top-section span {
+  font-weight: bold;
 }
 
-.search i:first-child {
-  position: absolute;
-  left: 1.1em;
-  color: rgba(90, 90, 90, 0.356);
-}
-
-.search i:last-child {
-  padding-right: 5px;
+.top-section i {
+  margin-left: auto;
   opacity: 0.7;
   cursor: pointer;
   position: relative;
 }
 
-.search i:last-child::after {
+.top-section i::after {
   content: "";
   position: absolute;
   background-color: black;
@@ -48,16 +36,15 @@
   left: -0.4rem;
 }
 
-.search i:last-child:hover::after {
+.top-section i:hover::after {
   opacity: 0.3;
 }
+/* header top section css ends here */
 
-/* search section css ends here */
-
-/* navbar css starts here */
+/* header navbar css starts here */
 nav {
   width: 100%;
-  font-size: 0.8rem;
+  /* font-size: 0.8rem; */
   display: flex;
   justify-content: stretch;
   align-items: stretch;
@@ -86,11 +73,11 @@ nav a.active {
 nav a.active::after {
   content: "";
   position: absolute;
-  width: 60%;
+  width: 20%;
   height: 0.3em;
   background-color: var(--twitter-color);
   bottom: 0;
-  left: 20%;
+  left: 40%;
   border-radius: 15px;
 }
-/* navbar css ends here */
+/* header navbar css ends here */
