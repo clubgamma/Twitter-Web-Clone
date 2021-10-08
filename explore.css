@@ -1,5 +1,11 @@
 /* css related to explore.html page, currently only for search and navbar section */
 
+/* header section css starts here */
+.feed header {
+  border-bottom: 2px solid #eee;
+}
+/* header section css ends here */
+
 /* search section css starts here */
 .search {
   display: flex;
@@ -81,7 +87,7 @@ nav a.active::after {
   content: "";
   position: absolute;
   width: 60%;
-  height: 0.5em;
+  height: 0.3em;
   background-color: var(--twitter-color);
   bottom: 0;
   left: 20%;
