@@ -83,6 +83,8 @@ body {
   border-top-left-radius: 13px;
   border-top-right-radius: 13px;
   box-shadow: 0 0 15px rgba(90, 89, 89, 0.253);
+  background-color: #ffff;
+  z-index: 10;
 }
 .messages__popup__header {
   display: flex;
