@@ -434,3 +434,111 @@ body {
   font-size: 18px;
   font-weight: 800;
 }
+
+/* Trending section starts */
+.trending{
+  border-right: 1px solid var(--twitter-background);
+  flex: 0.3;
+  width: 300px;
+  margin-top: 20px;
+}
+.trend_search{
+  background-color: rgb(243, 243, 243);
+  width: 350px;
+  height: 36px;
+  margin: auto;
+  border-radius: 18px;
+  display: flex;
+  flex-direction: row;
+}
+.trending i{
+  color: gray;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+.trend_search_font{
+  font-size: 18px;
+  margin-left: 15px;
+  color: gray;
+  margin-top: 5px;
+}
+.trend_main{
+  width: 350px;
+  background-color: rgb(248, 248, 248);
+  margin: auto;
+  margin-top: 7px;
+  border-radius: 10px;
+  height: 93%;
+}
+.trend_main_heading{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 5px;
+  border-bottom: 1px solid rgb(212, 212, 212);
+}
+.trend_main_heading div{
+  margin-left: 10px;
+  font-size: 20px;
+}
+.trend_main_heading i{
+  font-size: 25px;
+  color: var(--twitter-color);;
+}
+.trend_card_img,.trend_card{
+  line-height: 100%;
+  width: 96%;
+  margin: auto;
+  margin-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgb(192, 192, 192);
+}
+.trend_card_gray{
+  font-size: 14px;
+  color: rgb(163, 163, 163);
+  font-weight: 500;
+}
+.trend_card_heading{
+  font-size: 16px;
+  font-weight: 600;
+}
+.trend_card_content{
+  margin: 5px 0;
+  border: 1px solid rgb(212, 212, 212);
+  height: 80px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.trend_card_content .heading{
+  margin-left: 5px;
+  margin-top: 5px;
+  font-size: 17px;
+  color: rgb(163, 163, 163);
+}
+.trend_card_content .content{
+  margin-left: 5px;
+  margin-top: 7px;
+  font-size: 16px;
+  color: black;
+}
+.text{
+  width: 75%;
+}
+.trend_img{
+  width: 25%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.trend_img img{
+  height: 100%;
+  width: 100%;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.show-more{
+  margin-left: 7px;
+  font-size: 23px;
+  color: #50b7f5;
+}
+/* Trending sections ends */
