@@ -25,7 +25,7 @@ body {
 .sidebarOption h2 {
   font-weight: 800;
   font-size: 18px;
-  margin-right: 20px;
+  margin-right: 10px;
 }
 
 .sidebarOption:hover {
@@ -453,7 +453,8 @@ body {
 }
 .trending i{
   color: gray;
-  margin-top: 5px;
+  margin-top: auto;
+  margin-bottom: auto;
   margin-left: 10px;
 }
 .trend_search_font{
@@ -468,13 +469,13 @@ body {
   margin: auto;
   margin-top: 7px;
   border-radius: 10px;
-  height: 93%;
+  height: 92%;
 }
 .trend_main_heading{
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  padding: 5px;
+  padding: 12px 5px;
   border-bottom: 1px solid rgb(212, 212, 212);
 }
 .trend_main_heading div{
@@ -487,40 +488,46 @@ body {
 }
 .trend_card_img,.trend_card{
   line-height: 100%;
-  width: 96%;
-  margin: auto;
+  margin-bottom: auto;
   margin-top: 12px;
+  padding-left: 16px;
+  padding-right: 16px;
   padding-bottom: 12px;
   border-bottom: 1px solid rgb(192, 192, 192);
 }
 .trend_card_gray{
+  margin-top: 12px;
   font-size: 14px;
   color: rgb(163, 163, 163);
   font-weight: 500;
 }
 .trend_card_heading{
+  margin-top: 2px;
   font-size: 16px;
   font-weight: 600;
 }
 .trend_card_content{
-  margin: 5px 0;
+  margin: 12px 0 0;
   border: 1px solid rgb(212, 212, 212);
   height: 80px;
   border-radius: 10px;
   display: flex;
-  flex-direction: row;
 }
 .trend_card_content .heading{
-  margin-left: 5px;
-  margin-top: 5px;
+  margin-left: 12px;
+  margin-top: 12px;
   font-size: 17px;
   color: rgb(163, 163, 163);
 }
 .trend_card_content .content{
-  margin-left: 5px;
+  margin-left: 12px;
   margin-top: 7px;
   font-size: 16px;
   color: black;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;  
 }
 .text{
   width: 75%;
@@ -537,7 +544,8 @@ body {
   border-bottom-right-radius: 10px;
 }
 .show-more{
-  margin-left: 7px;
+  margin-top: 12px;
+  margin-left: 12px;
   font-size: 23px;
   color: #50b7f5;
 }
