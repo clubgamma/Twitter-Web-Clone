@@ -58,6 +58,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   padding: 0 10px;
+  overflow: hidden;
 }
 
 .sidebar {
@@ -77,7 +78,7 @@ body {
 
 .messages__popup {
   position: absolute;
-  bottom: 0;
+  bottom: -475px;
   right: 25px;
   min-width: 350px;
   border-top-left-radius: 13px;
@@ -85,6 +86,12 @@ body {
   box-shadow: 0 0 15px rgba(90, 89, 89, 0.253);
   background-color: #ffff;
   z-index: 10;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+}
+
+.popup {
+  bottom: 0;
 }
 .messages__popup__header {
   display: flex;
@@ -116,7 +123,6 @@ body {
   overflow-y: scroll;
   -webkit-transition: all 0.3s linear 0s;
   transition: all 0.3s linear 0s;
-  display: none;
 }
 #messages__popup__chats__id.toggle__messages__popup__chats {
   display: block;
@@ -183,9 +189,8 @@ body {
   scrollbar-width: none;
 }
 
-
 /* Tweet section styling goes here */
-.Tweet__container{
+.Tweet__container {
   position: fixed;
   top: 0;
   left: 0;
@@ -194,15 +199,15 @@ body {
   background: rgba(0, 0, 0, 0.3);
   display: grid;
   justify-content: center;
-  transition:  all 0.3s linear;;
+  transition: all 0.3s linear;
   visibility: hidden;
   z-index: -1;
 }
-.show__tweet{
+.show__tweet {
   visibility: visible;
-  z-index: 10; 
+  z-index: 10;
 }
-.Tweet__section{
+.Tweet__section {
   margin-top: 3rem;
   background: #fff;
   border-radius: 1rem;
@@ -210,51 +215,50 @@ body {
   height: 50vh;
   max-width: 620px;
   position: relative;
- 
 }
-.Tweet__section .Tweet__header{
+.Tweet__section .Tweet__header {
   padding: 1rem;
-  height: 60px; 
+  height: 60px;
   width: 100%;
   display: flex;
   align-items: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
-.Tweet__header span{
+.Tweet__header span {
   cursor: pointer;
 }
 
-.Tweet__section .Tweet__message{
+.Tweet__section .Tweet__message {
   padding: 1rem;
   display: flex;
 }
-.Tweet__message .message__right{
+.Tweet__message .message__right {
   flex: 1;
 }
-.Tweet__message textarea{
+.Tweet__message textarea {
   width: 100%;
   border: none;
   font-size: 1.4rem;
   margin-top: 10px;
   outline: none;
-  font-family:'Segoe UI';
+  font-family: "Segoe UI";
   overflow: hidden;
   resize: none;
 }
 
-.message__right .message__body{
+.message__right .message__body {
   display: flex;
   color: var(--twitter-color);
   align-items: center;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  padding: .8rem 0;
+  padding: 0.8rem 0;
 }
-.message__right .message__body span{
+.message__right .message__body span {
   font-size: 1rem !important;
 }
-.message__right .message__body p{
-  font-size: .7rem;
-  margin-left: .5rem;
+.message__right .message__body p {
+  font-size: 0.7rem;
+  margin-left: 0.5rem;
   letter-spacing: 1px;
   font-weight: bolder;
 }
@@ -266,38 +270,36 @@ body {
   align-items: center;
   justify-content: space-between;
 }
-.message__attachementicons{
+.message__attachementicons {
   display: flex;
   align-items: center;
 }
-.message__attachementicons .material-icons{ 
+.message__attachementicons .material-icons {
   margin-right: 0;
 }
-.message__right .message__attachicons{
-  padding-right: .5rem;
+.message__right .message__attachicons {
+  padding-right: 0.5rem;
   cursor: pointer;
 }
 
-.message__tweetbtn{
+.message__tweetbtn {
   background-color: var(--twitter-color);
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
   border-radius: 1rem;
   color: white;
   font-weight: bolder;
   border: none;
 }
-.message__tweetbtn:hover{
-  background-color:rgb(43, 143, 206);
+.message__tweetbtn:hover {
+  background-color: rgb(43, 143, 206);
 }
 
 /* Tweet section styling end Here */
-
 
 /* tweet box */
 .tweetbox__input img {
   border-radius: 50%;
   height: 50px;
-
 }
 
 .tweetBox {
@@ -343,7 +345,6 @@ body {
   border-radius: 50%;
   width: 50px;
   height: 50px;
-
 }
 
 .post {
@@ -436,13 +437,13 @@ body {
 }
 
 /* Trending section starts */
-.trending{
+.trending {
   border-right: 1px solid var(--twitter-background);
   flex: 0.3;
   width: 300px;
   margin-top: 20px;
 }
-.trend_search{
+.trend_search {
   background-color: rgb(243, 243, 243);
   width: 350px;
   height: 36px;
@@ -451,18 +452,18 @@ body {
   display: flex;
   flex-direction: row;
 }
-.trending i{
+.trending i {
   color: gray;
   margin-top: 5px;
   margin-left: 10px;
 }
-.trend_search_font{
+.trend_search_font {
   font-size: 18px;
   margin-left: 15px;
   color: gray;
   margin-top: 5px;
 }
-.trend_main{
+.trend_main {
   width: 350px;
   background-color: rgb(248, 248, 248);
   margin: auto;
@@ -470,22 +471,23 @@ body {
   border-radius: 10px;
   height: 93%;
 }
-.trend_main_heading{
+.trend_main_heading {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
   padding: 5px;
   border-bottom: 1px solid rgb(212, 212, 212);
 }
-.trend_main_heading div{
+.trend_main_heading div {
   margin-left: 10px;
   font-size: 20px;
 }
-.trend_main_heading i{
+.trend_main_heading i {
   font-size: 25px;
-  color: var(--twitter-color);;
+  color: var(--twitter-color);
 }
-.trend_card_img,.trend_card{
+.trend_card_img,
+.trend_card {
   line-height: 100%;
   width: 96%;
   margin: auto;
@@ -493,16 +495,16 @@ body {
   padding-bottom: 12px;
   border-bottom: 1px solid rgb(192, 192, 192);
 }
-.trend_card_gray{
+.trend_card_gray {
   font-size: 14px;
   color: rgb(163, 163, 163);
   font-weight: 500;
 }
-.trend_card_heading{
+.trend_card_heading {
   font-size: 16px;
   font-weight: 600;
 }
-.trend_card_content{
+.trend_card_content {
   margin: 5px 0;
   border: 1px solid rgb(212, 212, 212);
   height: 80px;
@@ -510,33 +512,33 @@ body {
   display: flex;
   flex-direction: row;
 }
-.trend_card_content .heading{
+.trend_card_content .heading {
   margin-left: 5px;
   margin-top: 5px;
   font-size: 17px;
   color: rgb(163, 163, 163);
 }
-.trend_card_content .content{
+.trend_card_content .content {
   margin-left: 5px;
   margin-top: 7px;
   font-size: 16px;
   color: black;
 }
-.text{
+.text {
   width: 75%;
 }
-.trend_img{
+.trend_img {
   width: 25%;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-.trend_img img{
+.trend_img img {
   height: 100%;
   width: 100%;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
 }
-.show-more{
+.show-more {
   margin-left: 7px;
   font-size: 23px;
   color: #50b7f5;
