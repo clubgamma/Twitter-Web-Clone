@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Twitter Clone Web App</title>
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="notification.css" />
+    <link rel="stylesheet" href="message.css" />
     <link
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
@@ -34,12 +34,12 @@
         <h2>Explore</h2>
       </div>
 
-      <div class="sidebarOption active" onclick="loadPage('notification')">
+      <div class="sidebarOption" onclick="loadPage('notification')">
         <span class="material-icons"> notifications_none </span>
         <h2>Notifications</h2>
       </div>
 
-      <div class="sidebarOption" onclick="loadPage('message')">
+      <div class="sidebarOption active" onclick="loadPage('message')">
         <span class="material-icons"> mail_outline </span>
         <h2>Messages</h2>
       </div>
@@ -71,20 +71,57 @@
     <div class="feed">
       <!-- header section starts -->
       <header>
-        <!-- notification header with settings icon starts -->
+        <!-- Message header with settings icon starts -->
         <div class="top-section">
-          <span>Notifications</span>
+          <span>Messages</span>
           <i class="fas fa-cog"></i>
         </div>
-        <!-- notification header with settings icon ends -->
-
-        <!-- navbar section starts -->
-        <nav>
-          <a>All</a>
-          <a>Mentions</a>
-        </nav>
-        <!-- navbar section ends -->
+        <div class="header_name">Yask Patel</div>
+        <div class="header_email">@yashpatel458</div>
       </header>
+      <div class="msg_main">
+        <div class="msg_box">
+          <div class="msg_card">
+            <div class="msg_actual">
+              <div class="msg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quod numquam iure ex, alias ad quas debitis incidunt modi fugiat, unde inventore doloribus! Molestias eveniet at voluptatem nostrum quam quo!
+              </div>
+              <div class="msg_date_time">16 Sept 21, 17:30</div>
+            </div>
+          </div>
+          <div class="msg_card_right">
+            <div class="msg_actual_right">
+              <div class="msg">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quod numquam iure ex!
+              </div>
+              <div class="msg_date_time">16 Sept 21, 17:30</div>
+            </div>
+          </div>
+          <div class="msg_card">
+            <div class="msg_actual">
+              <div class="msg">
+                okay, thats good!!!
+              </div>
+              <div class="msg_date_time">16 Sept 21, 17:30</div>
+            </div>
+          </div>
+          <div class="msg_card_right">
+            <div class="msg_actual_right">
+              <div class="msg">
+                Bye
+              </div>
+              <div class="msg_date_time">16 Sept 21, 17:30</div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="msg_text">
+          <div class="msg_text_input">
+            <div>Type your message here</div>
+            <i class="material-icons">send</i>
+          </div>
+        </div>
+      </div>
       <!-- header section ends -->
     </div>
     <!-- feed ends here -->
