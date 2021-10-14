@@ -10,7 +10,7 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
-    
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -39,7 +39,7 @@
         <h2>Notifications</h2>
       </div>
 
-      <div class="sidebarOption">
+      <div class="sidebarOption" onclick="loadPage('message')">
         <span class="material-icons"> mail_outline </span>
         <h2>Messages</h2>
       </div>
@@ -184,60 +184,74 @@
     </div>
 
     <!-- Trending section starts -->
-        <!-- feed starts -->
-        <div class="trending">
-          <div class="trend_search">
-            <i class="material-icons trend_search_icon" style="font-size:28px;">search</i>
-            <div class="trend_search_font">Search Twitter</div>
-          </div>
-          
-          <div class="trend_main">
-            <div class="trend_main_heading">
-              <div><strong>Trends for you</strong></div>
-              <i class="material-icons">settings</i>
-            </div>
+    <!-- feed starts -->
+    <div class="trending">
+      <div class="trend_search">
+        <i class="material-icons trend_search_icon" style="font-size: 28px"
+          >search</i
+        >
+        <div class="trend_search_font">Search Twitter</div>
+      </div>
 
-            <div class="trend_card_img">
-              <div class="trend_card_gray">Trending Worldwide</div>
-              <div class="trend_card_heading">#Breaking News</div>
-              <div class="trend_card_content">
-                <div class="text">
-                  <div class="heading">Space</div>
-                  <div class="content">Lunar Photography improves the discovery of the moon.</div>
-                </div>
-                <div class="trend_img">
-                  <img src="./images/moon.jpg" alt="">
-                </div>
+      <div class="trend_main">
+        <div class="trend_main_heading">
+          <div><strong>Trends for you</strong></div>
+          <i class="material-icons">settings</i>
+        </div>
+
+        <div class="trend_card_img">
+          <div class="trend_card_gray">Trending Worldwide</div>
+          <div class="trend_card_heading">#Breaking News</div>
+          <div class="trend_card_content">
+            <div class="text">
+              <div class="heading">Space</div>
+              <div class="content">
+                Lunar Photography improves the discovery of the moon.
               </div>
-              <div class="trend_card_gray">10,094 people are tweeting about this</div>
             </div>
-            <div class="trend_card">
-              <div class="trend_card_gray">Trending Worldwide</div>
-              <div class="trend_card_heading">#WorldNews</div>
-              <div class="trend_card_gray">125k Tweets<br>5,094 people are tweeting about this</div>
+            <div class="trend_img">
+              <img src="./images/moon.jpg" alt="" />
             </div>
-            <div class="trend_card_img">
-              <div class="trend_card_gray">Trending Worldwide</div>
-              <div class="trend_card_heading">#Breaking News</div>
-              <div class="trend_card_content">
-                <div class="text">
-                  <div class="heading">Animals</div>
-                  <div class="content">These cats are ready for<br>#internationalcatday</div>
-                </div>
-                <div class="trend_img">
-                  <img src="./images/cat.jpg" alt="">
-                </div>
-              </div>
-              <div class="trend_card_gray">2,757 people are tweeting about this</div>
-            </div>
-            <div class="trend_card">
-              <div class="trend_card_gray">Trending Worldwide</div>
-              <div class="trend_card_heading">#GreatestOfAllTime</div>
-              <div class="trend_card_gray">100k Tweets<br>4,123 people are tweeting about this</div>
-            </div>
-            <div class="show-more">Show More</div>
+          </div>
+          <div class="trend_card_gray">
+            10,094 people are tweeting about this
           </div>
         </div>
+        <div class="trend_card">
+          <div class="trend_card_gray">Trending Worldwide</div>
+          <div class="trend_card_heading">#WorldNews</div>
+          <div class="trend_card_gray">
+            125k Tweets<br />5,094 people are tweeting about this
+          </div>
+        </div>
+        <div class="trend_card_img">
+          <div class="trend_card_gray">Trending Worldwide</div>
+          <div class="trend_card_heading">#Breaking News</div>
+          <div class="trend_card_content">
+            <div class="text">
+              <div class="heading">Animals</div>
+              <div class="content">
+                These cats are ready for<br />#internationalcatday
+              </div>
+            </div>
+            <div class="trend_img">
+              <img src="./images/cat.jpg" alt="" />
+            </div>
+          </div>
+          <div class="trend_card_gray">
+            2,757 people are tweeting about this
+          </div>
+        </div>
+        <div class="trend_card">
+          <div class="trend_card_gray">Trending Worldwide</div>
+          <div class="trend_card_heading">#GreatestOfAllTime</div>
+          <div class="trend_card_gray">
+            100k Tweets<br />4,123 people are tweeting about this
+          </div>
+        </div>
+        <div class="show-more">Show More</div>
+      </div>
+    </div>
     <!-- Trending section ends -->
 
     <!-- Bottom right messages section starts -->
@@ -364,6 +378,8 @@
       function myFunction() {
         var element = document.getElementById("messages__popup__chats__id");
         element.classList.toggle("toggle__messages__popup__chats");
+        var messagesPopup = document.querySelector(".messages__popup");
+        messagesPopup.classList.toggle("popup");
         var arrowUp = document.getElementById("material-icons-id-u");
         arrowUp.classList.toggle("toggle__arrow__up");
         var arrowDown = document.getElementById("material-icons-id-d");

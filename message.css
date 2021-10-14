@@ -1,0 +1,118 @@
+/* css related to notification.html, currently only for top section with navbar */
+
+/* header css starts here */
+.feed header {
+    border-bottom: 2px solid #eee;
+  }
+  /* header css ends here */
+  
+  /* header top section css begins here */
+  .top-section {
+    display: flex;
+    margin-inline: 1rem;
+    margin-block-start: 1rem;
+  }
+  
+  .top-section span {
+    font-weight: bold;
+  }
+  
+  .top-section i {
+    margin-left: auto;
+    opacity: 0.7;
+    cursor: pointer;
+    position: relative;
+  }
+  
+  .top-section i::after {
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 1.8rem;
+    width: 1.8rem;
+    opacity: 0;
+    border-radius: 50%;
+    top: -0.4rem;
+    left: -0.4rem;
+  }
+  
+  .top-section i:hover::after {
+    opacity: 0.3;
+  }
+  .header_name{
+    margin-left: 15px;
+    margin-top: 10px;
+    font-size: 23px;
+  }
+  .header_email{
+    color: gray;
+    margin-left: 15px;
+    margin-top: -10px;
+  }
+  .msg_main{
+    width: 600px;
+    height: 80%;
+    margin: 10px;
+  }
+  .msg_box{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  .msg_text{
+    height: 10%;
+  }
+  .msg_text_input{
+    width: 90%;
+    margin: auto;
+    background-color: rgb(184, 184, 184);
+    height: 40px;
+    border-radius: 20px;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 8px;
+    color: black;
+    padding-left: 30px;
+    padding-right: 10px;
+  }
+  .msg_card{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+  }
+  .msg_actual{
+    line-height: 100%;
+    background-color: #a1d5f5;
+    padding: 10px;
+    border-radius: 15px 15px 15px 0;
+    max-width: 80%;
+    width: fit-content;
+  }
+  .msg_date_time{
+    color: rgb(114, 114, 114);
+    font-size: 13px;
+  }
+  .msg_card_right{
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    float: right;
+  }
+  .msg_actual_right{
+    line-height: 100%;
+    background-color: #ececec;
+    padding: 10px;
+    border-radius: 15px 15px 0 15px;
+    max-width: 80%;
+    width: fit-content;
+    float: right;
+  }
+  .msg_date_time_right{
+    color: gray;
+    font-size: 13px;
+    margin-top: -2px;
+  }
+  /* header top section css ends here */
+  
+  
