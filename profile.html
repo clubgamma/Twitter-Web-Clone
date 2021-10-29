@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Twitter Clone Web App</title>
+    <link rel="stylesheet" href="profile.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <!-- sidebar starts -->
+    <div class="sidebar">
+      <i class="fab fa-twitter"></i>
+      <div class="sidebarOption" onclick="loadPage('index')">
+        <span class="material-icons"> home </span>
+        <h2>Home</h2>
+      </div>
+
+      <div class="sidebarOption" onclick="loadPage('explore')">
+        <span class="material-icons"> tag </span>
+        <h2>Explore</h2>
+      </div>
+
+      <div class="sidebarOption" onclick="loadPage('notification')">
+        <span class="material-icons"> notifications_none </span>
+        <h2>Notifications</h2>
+      </div>
+
+      <div class="sidebarOption" onclick="loadPage('message')">
+        <span class="material-icons"> mail_outline </span>
+        <h2>Messages</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> bookmark_border </span>
+        <h2>Bookmarks</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> list_alt </span>
+        <h2>Lists</h2>
+      </div>
+
+      <div class="sidebarOption active" onclick="loadPage('profile')">
+        <span class="material-icons"> perm_identity </span>
+        <h2>Profile</h2>
+      </div>
+
+      <div class="sidebarOption">
+        <span class="material-icons"> more_horiz </span>
+        <h2>More</h2>
+      </div>
+      <button class="sidebar__tweet" onclick="showTweetSection()">Tweet</button>
+    </div>
+    <!-- sidebar ends -->
+
+    <div class="profile">
+        <div class="profile__header">
+          <i class="fas fa-arrow-left"></i>
+          <div class="profile__header__container">
+            <h2>Alexander</h2>
+            <div class="profile__header__container__subheading">2 Tweets</div>
+          </div>
+        </div>
+  
+        <!-- coverbox starts -->
+        <div class="coverBox">
+          <div>
+            <img class="coverbox__coverimage" src="images/Club Gamma.png" />
+            <img 
+              class="coverbox__profileimage"
+              src="https://cdn140.picsart.com/361791734047201.jpg?type=webp&to=crop&r=256"
+              alt=""
+            />
+          </div>
+            <button class="coverBox__editButton">Edit Profile</button>
+        </div>
+        <!-- coverbox ends -->
+
+        <!--title starts-->
+        <div class="profile__title">
+          <h2>Alexander</h2>
+          <span>@alexander_10</span>
+        </div>
+        <!-- title ends -->
+
+        <!--Bio starts-->
+        <div class="profile__bio">
+          <span>Aspiring Software Engineer | Club Gamma and Hacktoberfest 2021 Contributor | he/him</span>
+          <div class="profile__bio__subtext">
+            <i class="fas fa-map-marker-alt"></i> <span>  New Delhi, India</span> &nbsp; &nbsp;
+            <i class="far fa-calendar-alt"></i> <span>  Joined September 2019</span>
+          </div>
+          <div class="profile__bio__following">
+            <span><b>237</b></spam> <span> Following</span> &nbsp; &nbsp;
+            <span><b>32</b></span> <span>  Followers</span>
+          </div>
+        </div>
+
+        <!--tweet section header starts-->
+        <div class="profile__sectionHeader">
+          <div class="profile__sectionHeader__box active">Tweets</div>
+          <div class="profile__sectionHeader__box">Tweets & replies</div>
+          <div class="profile__sectionHeader__box">Media</div>
+          <div class="profile__sectionHeader__box">Likes</div>
+        </div>
+        <div class="line"></div>
+
+        <!--user tweets starts-->
+        <div class="retweet"><i class="fas fa-retweet"></i> &nbsp; &nbsp; You Retweeted</div>
+        <div class="post">
+          <div class="post__avatar">
+            <img
+              src="https://cachedimages.podchaser.com/256x256/aHR0cHM6Ly9jcmVhdG9yLWltYWdlcy5wb2RjaGFzZXIuY29tL2RmODZjM2RjZTg5ZDI2ZGQzZWI5NWU4YzI1MDBhMTIyLmpwZWc%3D/aHR0cHM6Ly93d3cucG9kY2hhc2VyLmNvbS9pbWFnZXMvbWlzc2luZy1pbWFnZS5wbmc%3D"
+              alt=""
+            />
+          </div>
+  
+          <div class="post__body profile_tweet">
+            <div class="post__header">
+              <div class="post__headerText">
+                <h3>
+                  Elon Musk
+                  <span class="post__headerSpecial"
+                    ><span class="material-icons post__badge"> verified </span
+                    >@elonmusk  ·  08 Oct</span
+                  >
+                </h3>
+              </div>
+              <div class="post__headerDescription">
+                <p>
+                  Oh sorry, yes, Roadster will have thrusters, not Plaid. Plaid is
+                  indeed close to the theoretical maximum of a roadworthy car
+                  without special devices.
+                </p>
+              </div>
+            </div>
+            <img
+              src="https://www.focus2move.com/wp-content/uploads/2020/01/Tesla-Roadster-2020-1024-03.jpg"
+              alt=""
+            />
+            <div class="post__footer">
+              <span class="material-icons"> repeat </span>
+              <span class="material-icons"> favorite_border </span>
+              <span class="material-icons"> publish </span>
+            </div>
+          </div>
+        </div>
+        <!--user tweets ends-->
+        <div class="line"></div>
+
+        <!--user tweets starts-->
+        <div class="post">
+          <div class="post__avatar">
+            <img
+              src="https://cdn140.picsart.com/361791734047201.jpg?type=webp&to=crop&r=256"
+              alt=""
+            />
+          </div>
+        <div class="post__body profile_tweet">
+          <div class="post__header">
+            <div class="post__headerText">
+              <h3>
+                Alexander
+                <span class="post__headerSpecial"
+                  >@alexander_10  ·  01 Oct</span
+                >
+              </h3>
+            </div>
+            <div class="post__headerDescription">
+              <p>
+                Hello Everyone! Hacktoberfest has started. Come and Checkout Club Gamma Repos to contribute. Absolute Beginners are always Welcome!!! :)
+              </p>
+            </div>
+          </div>
+          <img
+            src="images/Club Gamma.png"
+            alt=""
+          />
+          <div class="post__footer">
+            <span class="material-icons"> repeat </span>
+            <span class="material-icons"> favorite_border </span>
+            <span class="material-icons"> publish </span>
+          </div>
+        </div>
+      </div>
+      </div>
+      <!--user tweets ends-->
+    </div>
+    <!-- Trending section starts -->
+    <!-- feed starts -->
+    <div class="trending">
+      <div class="trend_search">
+        <i class="material-icons trend_search_icon" style="font-size: 28px"
+          >search</i
+        >
+        <div class="trend_search_font">Search Twitter</div>
+      </div>
+
+      <div class="trend_main">
+        <div class="trend_main_heading">
+          <div><strong>Trends for you</strong></div>
+          <i class="material-icons">settings</i>
+        </div>
+
+        <div class="trend_card_img">
+          <div class="trend_card_gray">Trending Worldwide</div>
+          <div class="trend_card_heading">#Breaking News</div>
+          <div class="trend_card_content">
+            <div class="text">
+              <div class="heading">Space</div>
+              <div class="content">
+                Lunar Photography improves the discovery of the moon.
+              </div>
+            </div>
+            <div class="trend_img">
+              <img src="./images/moon.jpg" alt="" />
+            </div>
+          </div>
+          <div class="trend_card_gray">
+            10,094 people are tweeting about this
+          </div>
+        </div>
+        <div class="trend_card">
+          <div class="trend_card_gray">Trending Worldwide</div>
+          <div class="trend_card_heading">#WorldNews</div>
+          <div class="trend_card_gray">
+            125k Tweets<br />5,094 people are tweeting about this
+          </div>
+        </div>
+        <div class="trend_card_img">
+          <div class="trend_card_gray">Trending Worldwide</div>
+          <div class="trend_card_heading">#Breaking News</div>
+          <div class="trend_card_content">
+            <div class="text">
+              <div class="heading">Animals</div>
+              <div class="content">
+                These cats are ready for<br />#internationalcatday
+              </div>
+            </div>
+            <div class="trend_img">
+              <img src="./images/cat.jpg" alt="" />
+            </div>
+          </div>
+          <div class="trend_card_gray">
+            2,757 people are tweeting about this
+          </div>
+        </div>
+        <div class="trend_card">
+          <div class="trend_card_gray">Trending Worldwide</div>
+          <div class="trend_card_heading">#GreatestOfAllTime</div>
+          <div class="trend_card_gray">
+            100k Tweets<br />4,123 people are tweeting about this
+          </div>
+        </div>
+        <div class="show-more">Show More</div>
+      </div>
+    </div>
+    <!-- Trending section ends -->
+
+    <!-- Bottom right messages section starts -->
+
+    <div class="messages__popup">
+      <div class="messages__popup__header" onclick="myFunction()">
+        <h3>Messages</h3>
+        <span class="material-icons"> mail_outline </span>
+        <span id="material-icons-id-u" class="material-icons">
+          expand_less
+        </span>
+        <span id="material-icons-id-d" class="material-icons">
+          expand_more
+        </span>
+      </div>
+      <div class="messages__popup__chats" id="messages__popup__chats__id">
+        <div class="messages__popup__chat">
+          <img
+            class="messages__popup__chat__profile__img"
+            src="images/Saheel.png"
+          />
+          <div class="messages__popup__chat__message">
+            <p><strong> Saheel M </strong> @savvysaheel</p>
+            <p class="messages__popup__chat__message__msg">
+              Reacted with &#128514;
+            </p>
+          </div>
+          <div class="messages__popup__chat__message__date">
+            <p>Oct 4</p>
+          </div>
+        </div>
+        <div class="messages__popup__chat">
+          <img
+            class="messages__popup__chat__profile__img"
+            src="images/Yash.png"
+          />
+          <div class="messages__popup__chat__message">
+            <p><strong>Yash Patel </strong> @yashpatel458</p>
+            <p class="messages__popup__chat__message__msg">
+              Can you check that bug again! 👨🏻‍💻
+            </p>
+          </div>
+          <div class="messages__popup__chat__message__date">
+            <p>Oct 4</p>
+          </div>
+        </div>
+        <div class="messages__popup__chat">
+          <img
+            class="messages__popup__chat__profile__img"
+            src="images/Aryan.png"
+          />
+          <div class="messages__popup__chat__message">
+            <p><strong> Aryan Kadia</strong> @ak523</p>
+            <p class="messages__popup__chat__message__msg">
+              Time to hit the Gym 💪🏻
+            </p>
+          </div>
+          <div class="messages__popup__chat__message__date">
+            <p>Oct 4</p>
+          </div>
+        </div>
+        <div class="messages__popup__chat">
+          <img
+            class="messages__popup__chat__profile__img"
+            src="images/Poojan.png"
+          />
+          <div class="messages__popup__chat__message">
+            <p><strong> Poojan Valadiya </strong> @poojanV55</p>
+            <p class="messages__popup__chat__message__msg">
+              Congratulations Bro &#127941;
+            </p>
+          </div>
+          <div class="messages__popup__chat__message__date">
+            <p>Oct 3</p>
+          </div>
+        </div>
+        <div class="messages__popup__chat">
+          <img
+            class="messages__popup__chat__profile__img"
+            src="images/Rushi.png"
+          />
+          <div class="messages__popup__chat__message">
+            <p><strong> Rushi Donga </strong> @rushidonga</p>
+            <p class="messages__popup__chat__message__msg">
+              Reacted with &#128155;
+            </p>
+          </div>
+          <div class="messages__popup__chat__message__date">
+            <p>Oct 3</p>
+          </div>
+        </div>
+        <div class="messages__popup__chat">
+          <img
+            class="messages__popup__chat__profile__img"
+            src="images/Kashyap.png"
+          />
+          <div class="messages__popup__chat__message">
+            <p><strong> Kashyap </strong> @kashyap3</p>
+            <p class="messages__popup__chat__message__msg">lol 😝</p>
+          </div>
+          <div class="messages__popup__chat__message__date">
+            <p>Oct 2</p>
+          </div>
+        </div>
+        <div class="messages__popup__chat">
+          <img
+            class="messages__popup__chat__profile__img"
+            src="images/Hetvi.png"
+          />
+          <div class="messages__popup__chat__message">
+            <p><strong> Hetvi Hadvani </strong> @Hetvi07</p>
+            <p class="messages__popup__chat__message__msg">Reacted with 🔥</p>
+          </div>
+          <div class="messages__popup__chat__message__date">
+            <p>Sept 30</p>
+          </div>
+        </div>
+        <div class="messages__popup__chat"></div>
+        <div class="messages__popup__chat"></div>
+      </div>
+    </div>
+
+    <script>
+      function myFunction() {
+        var element = document.getElementById("messages__popup__chats__id");
+        element.classList.toggle("toggle__messages__popup__chats");
+        var messagesPopup = document.querySelector(".messages__popup");
+        messagesPopup.classList.toggle("popup");
+        var arrowUp = document.getElementById("material-icons-id-u");
+        arrowUp.classList.toggle("toggle__arrow__up");
+        var arrowDown = document.getElementById("material-icons-id-d");
+        arrowDown.classList.toggle("toggle__arrow__down");
+      }
+
+      // This function popup the tweet section for tweeting onclick
+      function showTweetSection() {
+        let TweetContainer = document.getElementById("Tweet__container");
+        TweetContainer.classList.add("show__tweet");
+      }
+      // This function hides the tweet section onclick on cross
+      function hideTweetSection() {
+        let TweetContainer = document.getElementById("Tweet__container");
+        TweetContainer.classList.remove("show__tweet");
+      }
+    </script>
+    <!-- Bottom right messages section ends -->
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+/* profile */
+.profile {
+    flex: 0.5;
+    border-right: 1px solid var(--twitter-background);
+    overflow-y: scroll;
+  }
+  
+  .profile__header {
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+    border: 1px solid var(--twitter-background);
+    padding: 15px 15px 5px 15px;
+  }
+  
+  .profile__header h2 {
+    font-size: 20px;
+    font-weight: 800;
+  }
+  
+  .profile::-webkit-scrollbar {
+    display: none;
+  }
+  
+  .profile {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .profile__header__container {
+      margin-left: 40px;
+      line-height: 24px;
+  }
+
+  .profile__header__container__subheading {
+      font-size: 13px;
+      color: rgb(83, 100, 113);
+      font-weight: 400;
+  }
+
+  /* Cover box */
+  .coverBox {
+    font-family: "Poppins", sans-serif;
+    position: relative;
+  }
+
+  .coverbox__coverimage {
+    height: 200px;
+    width: 620px;
+  }
+
+  .coverbox__profileimage {
+    border-radius: 50%;
+    height: 130px;
+    position: absolute;
+    left: 3%;
+    top: 55%;
+    border: 4px solid #FFFFFF;
+  }
+  
+  .coverBox__editButton {
+    border: 1px solid #CFD9DE;
+    background-color: #FFFFFF;
+    color: black;
+    font-weight: 600;
+    font-size: 14px;
+    border-radius: 30px;
+    width: 110px;
+    height: 35px;
+    margin-top: 7px;
+    margin-left: 80%;
+    cursor: pointer;
+  }
+
+  .profile__title {
+    margin-top: 20px;
+    margin-left: 20px;
+    line-height: 24px;
+  }
+
+  .profile__title span {
+    color: #536471;
+    font-size: 14px;
+  }
+
+  .profile__bio {
+    margin-left: 20px;
+    margin-top: 10px;
+  }
+
+  .profile__bio span {
+    font-size: 14px;
+  }
+
+  .profile__bio__subtext {
+      margin-top: 10px;
+      color: #536471;
+  }
+
+  .profile__bio__following {
+    margin-top: 10px;
+  }
+
+  .profile__sectionHeader {
+    margin: 20px 60px 0px 60px;
+    display: flex;
+    justify-content: space-between;
+    color: #536471;
+    font-weight: 600;
+  }
+
+  .profile__sectionHeader__box {
+    padding: 0 0 10px;
+  }
+
+  .profile__sectionHeader .active {
+    color: black;
+    border-bottom: 4px solid var(--twitter-color);
+  }
+
+  .line {
+    background-color: #eaeaea;
+    height: 1px;
+  }
+
+  .profile_tweet {
+    padding-top: 0px;
+  }
