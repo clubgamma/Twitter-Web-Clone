@@ -54,7 +54,7 @@
         <h2>Lists</h2>
       </div>
 
-      <div class="sidebarOption">
+      <div class="sidebarOption" onclick="loadPage('profile')">
         <span class="material-icons"> perm_identity </span>
         <h2>Profile</h2>
       </div>
@@ -77,10 +77,12 @@
       <div class="tweetBox">
         <form>
           <div class="tweetbox__input">
+            <div onclick="loadPage('profile')" class="tweetbox__input__profileimage">
             <img
               src="https://cdn140.picsart.com/361791734047201.jpg?type=webp&to=crop&r=256"
               alt=""
             />
+          </div>
             <input type="text" placeholder="What's happening?" />
           </div>
           <button class="tweetBox__tweetButton">Tweet</button>
